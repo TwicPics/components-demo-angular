@@ -1,0 +1,22 @@
+<div id="twic-modal-container">
+  <TwicWrapper gitHubUrl="src/views/TwicModal.vue">
+    <TwicAbstract title="A modal revealer">
+      <p>Click on the image of your choice to reveal a modal.</p>
+    </TwicAbstract>
+    <div class="twic-grid">
+      <div *ngFor="let image of images; let i = index">
+        <figure class="poster-wrapper twic-item" (click)="openModal(i)">
+          <TwicImg [src]="image.url" focus="auto" ratio="0.95"></TwicImg>
+          <figcaption>
+            <p>Click</p>
+          </figcaption>
+        </figure>
+        <Modal
+          [image]="image"
+          [show]="i === idModalToOpen"
+          [onClose]="closeModal"
+        ></Modal>
+      </div>
+    </div>
+  </TwicWrapper>
+</div>

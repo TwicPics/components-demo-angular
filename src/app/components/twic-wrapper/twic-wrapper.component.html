@@ -1,0 +1,51 @@
+<div id="twic-demo-wrapper">
+  <header id="twic-header">
+    <a href="/" title="Home">
+      <h1 class="heading-primary">
+        <img
+          class="twicpics-logo"
+          src="https://assets.twicpics.com/demo/@twicpics-components/logos/twicpics.svg"
+          alt="TwicPics logo"
+        />
+        <span>x</span>
+        <img class="framework-logo" [src]="FRAMEWORK_LOGO" alt="React Logo" />
+      </h1>
+    </a>
+    <div class="ribbon">
+      <div>
+        <a
+          target="_blank"
+          [href]="gitHubRedirect"
+          rel="noreferrer"
+          title="Open in Github"
+        >
+          <img class="github" [src]="GIHUB_LOGO" alt="Open in Github" />
+        </a>
+        <a
+          target="_blank"
+          [href]="onLineUrl"
+          rel="noreferrer"
+          title="Open in StackBlitz"
+        >
+          <img
+            class="github"
+            [src]="STACKBLITZ_LOGO"
+            alt="Open in StackBlitz"
+          />
+        </a>
+      </div>
+    </div>
+    <div class="tags-container">
+      <div class="tag tag-components">@twicpics-components</div>
+      <a
+        [href]="DOCUMENTATION_URL"
+        target="_blank"
+        class="documentation-link tag tag--bg-purple-rain"
+        rel="noreferrer"
+      >
+        Documentation
+      </a>
+    </div>
+  </header>
+  <main id="twic-demo-container"><ng-content></ng-content></main>
+</div>

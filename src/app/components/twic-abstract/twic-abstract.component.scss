@@ -1,0 +1,31 @@
+.twic-abstract::ng-deep {
+  /* margin: 0 0 2rem; */
+  margin-bottom: 40px;
+
+  & h1 {
+    margin-bottom: 1rem;
+  }
+
+  & p {
+    margin-bottom: 0.5rem;
+    text-align: justify;
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 10px 0;
+    padding-left: 32px;
+    list-style: inside;
+  }
+
+  & a {
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: #8e08fd;
+    }
+  }
+}

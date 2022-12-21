@@ -1,0 +1,107 @@
+<div id="twic-transition-container">
+  <TwicWrapper gitHubUrl="src/views/TwicTransition.vue">
+    <TwicAbstract title="transition properties">
+      <p>
+        <strong>
+          The <dfn>transition</dfn> properties allow you to customize the effect
+          used to reveal the image once it has been loaded
+        </strong>
+        .
+      </p>
+      <ul>
+        <li>
+          <Code>transition</Code>: determines how the image will be revealed
+          once loaded (default: <Code>fade</Code>). The possible values are:
+          <br />-<Code>fade</Code>, for a <em>fade in</em> effect
+          <br />-<Code>zoom</Code>, for a <em>zoom</em> effect
+          <br />-<Code>fade+zoom</Code>, for both&nbsp; <em>fade</em> and
+          <em>zoom</em> effects <br />- or<Code>none</Code>, for no transition
+        </li>
+        <li>
+          <Code>transitionDelay</Code>: transition delay of the transition
+          effect (default:&nbsp; <Code>0ms</Code>).
+        </li>
+        <li>
+          <Code>transitionDuration</Code>: duration of the transition effect
+          (default:&nbsp; <Code>400ms</Code>).
+        </li>
+        <li>
+          <Code>transitionTimingFunction</Code>: CSS timing function applied to
+          the transition effect (default: <Code>ease</Code>).
+        </li>
+      </ul>
+    </TwicAbstract>
+    <div class="twic-testing-container">
+      <button class="twic-button" (click)="toggleTransition()">
+        {{ buttonText }}
+      </button>
+    </div>
+    <div class="twic-grid" [ngClass]="{ 'show-transitions': showTransition }">
+      <div class="twic-item">
+        <TwicImg [src]="IMG_URL" placeholder="preview"></TwicImg>
+        <span>Default values</span>
+      </div>
+      <div class="twic-item">
+        <TwicImg
+          [src]="IMG_URL"
+          transition="none"
+          placeholder="preview"
+        ></TwicImg>
+        <span>
+          <Code>transition="none"</Code>
+        </span>
+      </div>
+      <div class="twic-item">
+        <TwicImg [src]="IMG_URL" transition="zoom"></TwicImg>
+        <span>
+          <Code>transition="zoom"</Code>
+        </span>
+      </div>
+      <div class="twic-item">
+        <TwicImg [src]="IMG_URL" transition="fade"></TwicImg>
+        <span>
+          <Code>transition="fade"</Code>
+        </span>
+      </div>
+      <div class="twic-item">
+        <TwicImg [src]="IMG_URL" transition="fade+zoom"></TwicImg>
+        <span>
+          <Code>transition="fade+zoom"</Code>
+        </span>
+      </div>
+      <div class="twic-item">
+        <TwicImg
+          [src]="IMG_URL"
+          transitionDuration="2000ms"
+          placeholder="preview"
+        ></TwicImg>
+        <span>
+          <Code>transitionDuration="2000ms"</Code>
+        </span>
+      </div>
+      <div class="twic-item">
+        <TwicImg
+          [src]="IMG_URL"
+          transitionDuration="2000ms"
+          transitionTimingFunction="linear"
+          placeholder="preview"
+        ></TwicImg>
+        <span>
+          <Code>transitionDuration="2000ms"</Code>
+          and<Code>transitionTimingFunction="linear"</Code>
+        </span>
+      </div>
+      <div class="twic-item">
+        <TwicImg
+          [src]="IMG_URL"
+          transitionDelay="2000ms"
+          transitionTimingFunction="linear"
+          placeholder="preview"
+        ></TwicImg>
+        <span>
+          <Code>transitionDelay="2000ms"</Code>
+        </span>
+      </div>
+    </div>
+  </TwicWrapper>
+</div>

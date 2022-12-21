@@ -1,0 +1,50 @@
+<div id="twic-eager-container">
+  <TwicWrapper gitHubUrl="src/views/TwicEager.vue">
+    <div class="demo-container">
+      <TwicAbstract title="eager property">
+        <p>
+          <strong>
+            The <dfn>eager</dfn> property allows to disable lazy loading for a
+            given media
+          </strong>
+          : associated specific media will start loading regardless of whether
+          it is visible in the view port.
+        </p>
+        <p>
+          Useful to ensure that media is loaded before entering the viewport but
+          not recommended as a general practice.
+        </p>
+        <p>
+          See also the&nbsp;
+          <a href="/bulk-loading" target="_blank" rel="noreferrer"
+            >TwicView Component</a
+          >
+          &nbsp; which allows to load all the TwicImg and TwicVideo elements it
+          contains in one block, but once TwicView arrives near the Viewport.
+        </p>
+      </TwicAbstract>
+      <div *ngIf="this.indice === 0" class="twic-testing-container">
+        <button class="twic-button" (click)="startAnimation()">
+          Click to start animation
+        </button>
+      </div>
+
+      <div class="banner-container">
+        <div
+          class="banner"
+          [ngStyle]="{ transform: 'translateX(-' + this.indice * 100 + '%)' }"
+        >
+          <div *ngFor="let image of images" class="item">
+            <TwicImg
+              [src]="image.src"
+              [focus]="image.focus"
+              eager
+              ratio="none"
+              [preTransform]="image.preTransform"
+            ></TwicImg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </TwicWrapper>
+</div>

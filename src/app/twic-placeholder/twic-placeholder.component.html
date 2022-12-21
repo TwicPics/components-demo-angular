@@ -1,0 +1,62 @@
+<div id="twic-placeholder-container">
+  <TwicWrapper gitHubUrl="src/views/TwicPlaceholder.vue">
+    <TwicAbstract title="placeholder property">
+      <p>
+        <strong>
+          The <dfn>placeholder</dfn> property helps you optimize user
+          experience, CLS, and implement the LQIP technique.
+        </strong>
+      </p>
+      <p>
+        TwicPics Components automatically adds a background placeholder to your
+        images: their size are reserved in the page before the images are
+        actually loaded.
+      </p>
+      <p>
+        The<Code>placeholder</Code>values can be:
+        <Code>preview</Code>,<Code>meancolor</Code>,<Code>maincolor</Code>or
+        <Code>none</Code>.
+      </p>
+      <p>
+        The browser is told to load a SVG version as a background image first,
+        then to replace it with the full version later on.
+      </p>
+      <p>
+        When set to<Code>preview</Code>(the default value), a blurry version of
+        your image is used as a background image.
+      </p>
+    </TwicAbstract>
+    <div class="twic-testing-container">
+      <button class="twic-button" (click)="togglePlaceholder()">
+        {{ togglePlaceholderText }}
+      </button>
+    </div>
+    <div class="twic-grid" [ngClass]="{ 'show-placeholders': showPlaceholder }">
+      <div class="twic-item">
+        <TwicImg [src]="IMG_URL" placeholder="preview"></TwicImg>
+        <span>
+          <Code>placeholder="preview"</Code>
+          (default value)
+        </span>
+      </div>
+      <div class="twic-item">
+        <TwicImg [src]="IMG_URL" placeholder="meancolor"></TwicImg>
+        <span>
+          <Code>placeholder="meancolor"</Code>
+        </span>
+      </div>
+      <div class="twic-item">
+        <TwicImg [src]="IMG_URL" placeholder="maincolor"></TwicImg>
+        <span>
+          <Code>placeholder="maincolor"</Code>
+        </span>
+      </div>
+      <div class="twic-item">
+        <TwicImg [src]="IMG_URL" placeholder="none"></TwicImg>
+        <span>
+          <Code>placeholder="none"</Code>
+        </span>
+      </div>
+    </div>
+  </TwicWrapper>
+</div>

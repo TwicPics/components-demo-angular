@@ -1,0 +1,52 @@
+<div id="twic-state-container">
+  <TwicWrapper gitHubUrl="src/views/TwicState.vue">
+    <TwicAbstract title="state property and / or statechange event ">
+      <p>
+        You can access to the loading state of your image or video by passing a
+        callback to
+        <Code>onStateChange</Code> property.
+      </p>
+      <p>Here are the values the Component will emit :</p>
+      <ul>
+        <li>
+          <Code>new</Code>: when the img or video source has not started loading
+        </li>
+        <li><Code>loading</Code>: when the img or video source is loading</li>
+        <li>
+          <Code>done</Code>: when the img or video source has successfully
+          loaded
+        </li>
+        <li>
+          <Code>error</Code>: when an error occurred while loading the img or
+          video source
+        </li>
+      </ul>
+      <p>
+        <strong>Change the width of your browser</strong> to see the image
+        aspect-ratio adapt according to the CSS rules. The loading status should
+        then also be updated.
+      </p>
+      <p>
+        Current state is: <b>{{ state }}</b
+        >.
+      </p>
+    </TwicAbstract>
+    <div class="twic-testing-container">
+      <button
+        class="twic-button"
+        [disabled]="!imageReady"
+        (click)="changeImage()"
+      >
+        Click to load next image
+      </button>
+    </div>
+
+    <div class="twic-item style-driven-responsive">
+      <TwicImg
+        [src]="config[indice].src"
+        focus="48px100p"
+        (stateChangeEvent)="onStateChange($event)"
+      ></TwicImg>
+    </div>
+  </TwicWrapper>
+</div>

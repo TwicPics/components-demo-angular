@@ -1,0 +1,39 @@
+<div id="twic-hero-container">
+  <TwicWrapper gitHubUrl="src/views/TwicHero.vue">
+    <div class="twic-demo-container">
+      <TwicAbstract title="Hero image">
+        <p>To display a hero image (or video) you need to :</p>
+        <ul>
+          <li>
+            define the dimensions of TwicImg (or TwicVideo) especially it's
+            height.
+          </li>
+          <li>
+            use<Code>ratio="none"</Code>to free
+            <a routerLink="/ratio">aspect ratio</a>
+          </li>
+          <li>
+            specify the dimensions of the original image in&nbsp;
+            <a routerLink="/intrinsic">intrinsic</a>
+            property as in<Code>intrinsic="3840x2160"</Code>
+          </li>
+        </ul>
+        <p>
+          Your hero media should resize itself according to the viewport while
+          preserving its intrinsic ratio aspect.
+        </p>
+        <p>
+          <strong>Change the dimensions of your browser </strong>
+          to see the image adapt it's new viewport.
+        </p>
+      </TwicAbstract>
+      <div class="hero">
+        <TwicImg
+          src="components/goldenGate.jpg"
+          ratio="none"
+          intrinsic="3840x2160"
+        ></TwicImg>
+      </div>
+    </div>
+  </TwicWrapper>
+</div>

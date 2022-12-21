@@ -1,0 +1,22 @@
+<div id="twic-slider-container">
+  <TwicWrapper gitHubUrl="src/views/TwicSlider.vue">
+    <TwicAbstract title="A slider">
+      <p>
+        A simple slider that uses TwicPics for automatic lazy-loading, CLS
+        optimization and art directions adaptation.
+      </p>
+      <p>
+        <strong>Change the width of your browser</strong> to see the image
+        aspect-ratio adapt according to the CSS rules.
+      </p>
+    </TwicAbstract>
+
+    <ul class="slider">
+      <li *ngFor="let image of images" class="slider-item">
+        <figure class="card twic-item">
+          <TwicImg [src]="image.url"></TwicImg>
+        </figure>
+      </li>
+    </ul>
+  </TwicWrapper>
+</div>

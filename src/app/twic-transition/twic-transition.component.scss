@@ -1,0 +1,15 @@
+#twic-transition-container {
+  ::ng-deep .show-transitions {
+    .twic-tf img:hover {
+      opacity: 0 !important;
+    }
+
+    .twic-tf img + div {
+      opacity: 1 !important;
+    }
+
+    .twic-tz img {
+      transform: scale(0) !important;
+    }
+  }
+}

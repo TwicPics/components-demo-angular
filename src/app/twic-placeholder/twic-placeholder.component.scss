@@ -1,0 +1,10 @@
+#twic-placeholder-container {
+  .show-placeholders {
+    ::ng-deep img {
+      visibility: hidden !important;
+    }
+    ::ng-deep img + div {
+      opacity: 1 !important;
+    }
+  }
+}

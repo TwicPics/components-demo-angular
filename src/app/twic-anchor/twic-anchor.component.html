@@ -1,0 +1,118 @@
+<div id="twic-anchor-container">
+  <TwicWrapper gitHubUrl="src/views/TwicAnchor.vue">
+    <TwicAbstract title="anchor property">
+      <p>
+        <strong>
+          The <dfn>anchor</dfn> property positions the image in both
+          <Code>contain</Code>
+          and<Code>cover</Code>mode.
+        </strong>
+      </p>
+      It allows to:
+      <ul>
+        <li>
+          position the letterboxed image in its container
+          in<Code>contain</Code>mode.
+        </li>
+        <li>
+          determine what should be visible when the image is cropped in&nbsp;
+          <span class="twic-code">cover</span> mode.
+        </li>
+      </ul>
+      <p>
+        Accepted values are<Code>top</Code>,<Code>bottom</Code>,<Code
+          >left</Code
+        >
+        ,&nbsp;
+        <Code>right</Code>,<Code>top-left</Code>,<Code>top-right</Code>,<Code
+          >bottom-left</Code
+        ><Code>bottom-right</Code>and<Code>center</Code>.
+      </p>
+      <p>
+        Please note that anchor is applied after an eventual transformation
+        defined with&nbsp;
+        <a routerLink="/pre-transform">preTransform</a>
+        property.
+      </p>
+      <p>
+        For a more specific positionning see&nbsp;
+        <a routerLink="/position">position</a>
+        &nbsp;or&nbsp;
+        <a routerLink="/focus">focus</a>
+        &nbsp;properties in for
+        <Code>contain</Code>or <Code>cover</Code>mode respectively.
+      </p>
+    </TwicAbstract>
+    <div class="twic-testing-container">
+      <button class="twic-button" (click)="updateIndice()">
+        Click to see anchor effect
+      </button>
+    </div>
+    <div class="twic-grid">
+      <div class="twic-item">
+        <TwicImg
+          src="components/anchor/anchor.jpg"
+          preTransform="focus=bottom-right/cover=1:1"
+          [anchor]="horizontalConfig[indice]"
+          mode="contain"
+          ratio="4/3"
+        ></TwicImg>
+        <span>
+          <span>
+            <Code>anchor="{{ horizontalConfig[indice] }}"</Code>
+            <Code>mode="contain"</Code>
+          </span>
+        </span>
+      </div>
+      <div class="twic-item">
+        <TwicImg
+          src="components/anchor/anchor.jpg"
+          preTransform="focus=bottom-right/cover=1:1"
+          [anchor]="verticalConfig[indice]"
+          mode="contain"
+          ratio="3/4"
+        ></TwicImg>
+        <span>
+          <span>
+            <span>
+              <Code>anchor="{{ verticalConfig[indice] }}"</Code>
+              <Code>mode="contain"</Code>
+            </span>
+          </span>
+        </span>
+      </div>
+      <div class="twic-item">
+        <TwicImg
+          src="components/anchor/anchor.jpg"
+          preTransform="focus=bottom/cover=1:1"
+          [anchor]="horizontalConfig[indice]"
+          mode="cover"
+          ratio="3/4"
+        ></TwicImg>
+        <span>
+          <span>
+            <Code>anchor="{{ horizontalConfig[indice] }}"</Code>
+            <Code>mode="cover"</Code>
+          </span>
+        </span>
+      </div>
+      <div class="twic-item">
+        <TwicImg
+          src="components/anchor/anchor.jpg"
+          preTransform="cover=1:1"
+          [anchor]="verticalConfig[indice]"
+          mode="cover"
+          ratio="4/3"
+        ></TwicImg>
+        <span>
+          <span>
+            <span>
+              <Code>anchor="{{ horizontalConfig[indice] }}</Code>
+              <Code>mode="cover"</Code>
+            </span>
+          </span>
+        </span>
+      </div>
+    </div>
+  </TwicWrapper>
+</div>
