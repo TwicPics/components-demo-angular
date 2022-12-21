@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 const ONLINE_URL = `https://stackblitz.com/edit/github-wpprt7?file=`;
-const GITHUB = `https://github.com/TwicPics/components-demo-vue3`;
+const GITHUB = `https://github.com/TwicPics/components-demo-angular`;
 
 @Component({
   selector: 'TwicWrapper',
