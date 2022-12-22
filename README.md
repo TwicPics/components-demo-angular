@@ -1,27 +1,96 @@
-# ComponentsDemoAngular
+# TwicPics Components + Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
+This project is a demonstration project of [TwicPics Components](https://www.twicpics.com/docs/components/angular?utm_source=github&utm_medium=organic&utm_campaign=components) using [Angular](https://angular.io/).
 
-## Development server
+## How to build
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Using npm
 
-## Code scaffolding
+```bash
+# install dependencies
+$ npm install
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# serve with hot reload at localhost:3000
+$ npm run serve
 
-## Build
+# build for production
+$ npm run build
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Using yarn
 
-## Running unit tests
+```bash
+# install dependencies
+$ yarn install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# serve with hot reload at localhost:3000
+$ yarn serve
 
-## Running end-to-end tests
+# build for production
+$ yarn build
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Overview
 
-## Further help
+<div id='what-is-twicpics'/>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### What is [TwicPics](https://www.twicpics.com/?utm_source=github&utm_medium=organic&utm_campaign=components)?
+
+[TwicPics](https://www.twicpics.com/?utm_source=github&utm_medium=organic&utm_campaign=components) is a **Responsive Image Service Solution** (SaaS) that enables **on-demand responsive image generation**.
+
+With [TwicPics](https://www.twicpics.com/?utm_source=github&utm_medium=organic&utm_campaign=components), developers only deal with high-resolution versions of their media while end-users receive **optimized, perfectly sized, device-adapted** versions **delivered from a server close to them**.
+
+[TwicPics](https://www.twicpics.com/?utm_source=github&utm_medium=organic&utm_campaign=components) acts as an **image proxy**. It requests your master image, be it on your own web server, cloud storage or DAM, then generates a **device-adapted** version with **best-in-class compression**, delivered directly to the end-user from the **closest delivery point** available.
+
+<div id='what-is-twicpics-components'/>
+
+### What is TwicPics Components?
+
+TwicPics Components is a **collection of web components** that make it dead easy to unleash the power of [TwicPics](https://www.twicpics.com/?utm_source=github&utm_medium=organic&utm_campaign=components) in your own projects.
+
+Basically, TwicPics components replace `img` and `video` tags. They greatly and transparently optimize your CLS by providing LQIP (Low-Quality Image Placeholders) and Lazy Loading out of the box.
+
+Simply replace this:
+
+```html
+<img src="https://assets.twicpics.com/examples/football.jpg" />
+```
+
+With this:
+
+```html
+<TwicImg src="https://assets.twicpics.com/examples/football.jpg" />
+```
+
+Thanks to the open source [TwicPics](https://www.twicpics.com/?utm_source=github&utm_medium=organic&utm_campaign=components) Components, delivering responsive images in your [Angular](https://angular.io/) projects has never been easier.
+
+## TwicPics configuration
+
+<div id='create-an-account'/>
+
+### Requirement
+
+The only requirement is to have a TwicPics account.
+If you don't already have one, you can easily [create your own TwicPics account for free](https://account.twicpics.com/signup).
+
+### Configuring `@twicpics/components`
+
+An example of configuration is set within `app.component.ts` file.
+
+All you have to do is set your configuration options to the desired values ([see documentation](https://www.twicpics.com/docs/components/angular?utm_source=github&utm_medium=organic&utm_campaign=components#setup-options)).
+
+## Examples
+
+All the examples proposed in this project are located in the `app` directory.
+Feel free to inspire yourself from these different use cases to unleash the power of [TwicPics](https://www.twicpics.com/) in your own projects.
+
+## Questions and feedback
+
+Fell free to submit an [issue](https://github.com/TwicPics/components/issues) or to ask us anything by dropping an email at [support@twic.pics](mailto:support@twic.pics).
+
+## Licence
+
+[![License][license-image]][license-url]
+
+[license-image]: https://img.shields.io/npm/l/@twicpics/components.svg?style=flat-square
+[license-url]: https://raw.githubusercontent.com/twicpics/components/master/LICENSE
