@@ -47,7 +47,7 @@ export class TwicEagerComponent implements OnInit, OnDestroy {
     },
   ];
   indice = 0;
-  paused = false;
+  paused = true;
 
   constructor() { }
 
