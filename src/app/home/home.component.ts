@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
         },
         {
           route: `/basic-grid`,
-          imgSrc: `https://assets.twicpics.com/examples/football.jpg`,
+          imgSrc: `football.jpg`,
           title: `Basic example`,
         },
         {
