@@ -31,7 +31,7 @@ const routes: Routes = [
 
   { path: "home", component: HomeComponent },
   { path: "anchor", component: TwicAnchorComponent },
-  { path: "art-directions", component: TwicArtDirectionComponent },
+  { path: "art-direction", component: TwicArtDirectionComponent },
   { path: "basic-grid", component: TwicBasicGridComponent },
   { path: "bot", component: TwicBotComponent },
   { path: "bulk-loading", component: TwicBulkLoadingComponent },

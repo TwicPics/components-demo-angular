@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
       title: `Use cases`,
       items: [
         {
-          route: `/art-directions`,
+          route: `/art-direction`,
           imgSrc: `components/greece.jpg`,
           title: `Art directions`,
         },
