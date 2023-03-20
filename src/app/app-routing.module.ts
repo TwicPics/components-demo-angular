@@ -26,6 +26,7 @@ import { TwicSlideshowComponent } from './twic-slideshow/twic-slideshow.componen
 import { TwicStateComponent } from './twic-state/twic-state.component';
 import { TwicStyleDrivenComponent } from './twic-style-driven/twic-style-driven.component';
 import { TwicTransitionComponent } from './twic-transition/twic-transition.component';
+import { TwicZoomComponent } from './twic-zoom/twic-zoom.component';
 
 const routes: Routes = [
 
@@ -55,6 +56,7 @@ const routes: Routes = [
   { path: "slideshow", component: TwicSlideshowComponent },
   { path: "style-driven", component: TwicStyleDrivenComponent },
   { path: "transition", component: TwicTransitionComponent },
+  { path: "zoom", component: TwicZoomComponent },
   {
     path: "",
     redirectTo: "home",

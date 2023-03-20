@@ -32,8 +32,10 @@ import { TwicTransitionComponent } from './twic-transition/twic-transition.compo
 import { TwicStyleDrivenComponent } from './twic-style-driven/twic-style-driven.component';
 import { TwicModalComponent } from './twic-modal/twic-modal.component';
 import { TwicSlideshowComponent } from './twic-slideshow/twic-slideshow.component';
+import { TwicZoomComponent } from './twic-zoom/twic-zoom.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { SlideshowComponent } from './components/slideshow/slideshow.component';
+
 
 @NgModule({
   declarations: [
@@ -67,6 +69,7 @@ import { SlideshowComponent } from './components/slideshow/slideshow.component';
     TwicStyleDrivenComponent,
     TwicModalComponent,
     TwicSlideshowComponent,
+    TwicZoomComponent,
     ModalComponent,
     SlideshowComponent
   ],
