@@ -1516,8 +1516,10 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"
   integrity sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==
 
-"@twicpics/components@file:../../components/dist":
-  version "0.15.1"
+"@twicpics/components@0.16.0":
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/@twicpics/components/-/components-0.16.0.tgz#8c049e6fbab4b07840b1bb9c3f04b29d9ffbbf2e"
+  integrity sha512-h4gpcV+OpBakjIizMfVDZp9gkQDXNf/gwj3LlLzFrOrY9vDs4fl5dvaIfzi61tvWlrccs4abuisFulNsTX0r1w==
 
 "@types/body-parser@*":
   version "1.19.2"
