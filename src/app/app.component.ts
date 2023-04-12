@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { installTwicPics } from '@twicpics/components/angular14'
+import { installTwicPics } from '@twicpics/components/angular15'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

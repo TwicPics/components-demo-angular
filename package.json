@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "serve": "ng serve --port 3000"
+    "serve": "ng serve --port 3000",
+    "clear": "rm -rf node_modules && rm -rf .angular && yarn"
   },
   "private": true,
   "dependencies": {
@@ -18,7 +19,7 @@
     "@angular/platform-browser": "^15.2.0-rc.0",
     "@angular/platform-browser-dynamic": "^15.2.0-rc.0",
     "@angular/router": "^15.2.0-rc.0",
-    "@twicpics/components": "0.16.1",
+    "@twicpics/components": "0.17.0",
     "angular-in-memory-web-api": "~0.15.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

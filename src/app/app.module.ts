@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TwicPicsComponentsModule } from "@twicpics/components/angular14";
+import { TwicPicsComponentsModule } from "@twicpics/components/angular15";
 import { HomeComponent } from './home/home.component';
 import { TwicWrapperComponent } from './components/twic-wrapper/twic-wrapper.component';
 import { TwicAbstractComponent } from './components/twic-abstract/twic-abstract.component';
