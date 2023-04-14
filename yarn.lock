@@ -1541,10 +1541,10 @@
   dependencies:
     minimatch "^7.4.2"
 
-"@twicpics/components@0.17.0":
-  version "0.17.0"
-  resolved "https://registry.yarnpkg.com/@twicpics/components/-/components-0.17.0.tgz#1b2c51b527b23cdf3793bb12005ab594a9bbf7b3"
-  integrity sha512-MjJ04YQy4NfwaRSJIIyziUNoadKLI7ifun8xFpL/ANU8fu2p3lmy7OUBtuvTOvxWiSrdmhIJARwLYsamK49j0w==
+"@twicpics/components@0.17.1":
+  version "0.17.1"
+  resolved "https://registry.yarnpkg.com/@twicpics/components/-/components-0.17.1.tgz#254f3cd8252a0fc89c6666587c17fb53135da487"
+  integrity sha512-y8CpOGx+MvejFHYOOMdYQ2dwNTBKHve2jAjxY9OqoU/tyumZh2zbBdDeDfXN6sSXZ0K8nIlRl0ke6P59ju224w==
 
 "@types/body-parser@*":
   version "1.19.2"
