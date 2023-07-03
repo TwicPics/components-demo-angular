@@ -1,5 +1,5 @@
 import { ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
-import { StateEvent } from '@twicpics/components/angular14';
+import { StateEvent } from '@twicpics/components/angular16';
 
 @Component({
   selector: 'Slideshow',

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Anchor } from '@twicpics/components/angular14';
+import { Anchor } from '@twicpics/components/angular16';
 
 
 @Component({

@@ -10,6 +10,7 @@
                 <ng-template [ngIf]="item.imgSrc">
                   <TwicImg
                     [src]="item.imgSrc"
+                    [refit]="getRefit(item)"
                     [focus]="getFocus(item.focus)"
                   ></TwicImg>
                 </ng-template>

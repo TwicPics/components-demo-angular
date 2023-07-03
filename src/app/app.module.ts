@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TwicPicsComponentsModule } from "@twicpics/components/angular15";
+import { TwicPicsComponentsModule } from "@twicpics/components/angular16";
 import { HomeComponent } from './home/home.component';
 import { TwicWrapperComponent } from './components/twic-wrapper/twic-wrapper.component';
 import { TwicAbstractComponent } from './components/twic-abstract/twic-abstract.component';
@@ -25,6 +25,7 @@ import { TwicPlaceholderComponent } from './twic-placeholder/twic-placeholder.co
 import { TwicPositionComponent } from './twic-position/twic-position.component';
 import { TwicPreTransformComponent } from './twic-pre-transform/twic-pre-transform.component';
 import { TwicRatioComponent } from './twic-ratio/twic-ratio.component';
+import { TwicRefitComponent } from './twic-refit/twic-refit.component';
 import { TwicShortVideosComponent } from './twic-short-videos/twic-short-videos.component';
 import { TwicSliderComponent } from './twic-slider/twic-slider.component';
 import { TwicStateComponent } from './twic-state/twic-state.component';
@@ -62,6 +63,7 @@ import { SlideshowComponent } from './components/slideshow/slideshow.component';
     TwicPositionComponent,
     TwicPreTransformComponent,
     TwicRatioComponent,
+    TwicRefitComponent,
     TwicShortVideosComponent,
     TwicSliderComponent,
     TwicStateComponent,

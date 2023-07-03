@@ -140,6 +140,13 @@ export class HomeComponent implements OnInit {
           title: `ratio`,
         },
         {
+          route: `/refit`,
+          imgSrc: `components/refit/dog-looking-water.jpg`,
+          focus: `50px50p`,
+          refit: `5p`,
+          title: `refit`,
+        },
+        {
           route: `/state`,
           imgSrc: `components/state/autumn.jpg`,
           title: `state`,
@@ -162,7 +169,12 @@ export class HomeComponent implements OnInit {
 
   getFocus(focus: string | undefined): string {
     return focus || `auto`;
+  };
+
+  getRefit(items: any): boolean | string {
+    return items[`refit`] || false;
   }
+
   ngOnInit(): void {
   }
 

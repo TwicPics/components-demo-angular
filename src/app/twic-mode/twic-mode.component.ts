@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Mode } from '@twicpics/components/angular14';
+import { Mode } from '@twicpics/components/angular16';
 
 const IMG_URL = `components/fox.jpg`;
 

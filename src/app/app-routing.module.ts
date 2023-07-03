@@ -20,6 +20,7 @@ import { TwicPlaceholderComponent } from './twic-placeholder/twic-placeholder.co
 import { TwicPositionComponent } from './twic-position/twic-position.component';
 import { TwicPreTransformComponent } from './twic-pre-transform/twic-pre-transform.component';
 import { TwicRatioComponent } from './twic-ratio/twic-ratio.component';
+import { TwicRefitComponent } from './twic-refit/twic-refit.component';
 import { TwicShortVideosComponent } from './twic-short-videos/twic-short-videos.component';
 import { TwicSliderComponent } from './twic-slider/twic-slider.component';
 import { TwicSlideshowComponent } from './twic-slideshow/twic-slideshow.component';
@@ -50,6 +51,7 @@ const routes: Routes = [
   { path: "position", component: TwicPositionComponent },
   { path: "pre-transform", component: TwicPreTransformComponent },
   { path: "ratio", component: TwicRatioComponent },
+  { path: "refit", component: TwicRefitComponent },
   { path: "short-videos", component: TwicShortVideosComponent },
   { path: "slider", component: TwicSliderComponent },
   { path: "state", component: TwicStateComponent },
