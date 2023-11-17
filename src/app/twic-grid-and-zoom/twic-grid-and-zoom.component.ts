@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { TwicPicsComponentsModule } from '@twicpics/components/angular17';
+import { NgFor } from '@angular/common';
+import { TwicAbstractComponent } from '../components/twic-abstract/twic-abstract.component';
+import { TwicWrapperComponent } from '../components/twic-wrapper/twic-wrapper.component';
 
 const SEED = [
   {
@@ -195,9 +199,11 @@ const SEED = [
   },
 ];
 @Component({
-  selector: 'app-twic-grid-and-zoom',
-  templateUrl: './twic-grid-and-zoom.component.html',
-  styleUrls: ['./twic-grid-and-zoom.component.scss']
+    selector: 'app-twic-grid-and-zoom',
+    templateUrl: './twic-grid-and-zoom.component.html',
+    styleUrls: ['./twic-grid-and-zoom.component.scss'],
+    standalone: true,
+    imports: [TwicWrapperComponent, TwicAbstractComponent, NgFor, TwicPicsComponentsModule]
 })
 export class TwicGridAndZoomComponent {
   /**

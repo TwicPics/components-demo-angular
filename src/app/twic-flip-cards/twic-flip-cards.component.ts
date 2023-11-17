@@ -1,9 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { TwicPicsComponentsModule } from '@twicpics/components/angular17';
+import { NgFor } from '@angular/common';
+import { TwicAbstractComponent } from '../components/twic-abstract/twic-abstract.component';
+import { TwicWrapperComponent } from '../components/twic-wrapper/twic-wrapper.component';
 
 @Component({
-  selector: 'app-twic-flip-cards',
-  templateUrl: './twic-flip-cards.component.html',
-  styleUrls: ['./twic-flip-cards.component.scss']
+    selector: 'app-twic-flip-cards',
+    templateUrl: './twic-flip-cards.component.html',
+    styleUrls: ['./twic-flip-cards.component.scss'],
+    standalone: true,
+    imports: [TwicWrapperComponent, TwicAbstractComponent, NgFor, TwicPicsComponentsModule]
 })
 export class TwicFlipCardsComponent {
 

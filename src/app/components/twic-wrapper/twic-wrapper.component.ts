@@ -4,9 +4,10 @@ import { Component, Input, OnInit } from '@angular/core';
 const GITHUB_REPO_NAME = `TwicPics/components-demo-angular`;
 const GITHUB = `https://github.com/${GITHUB_REPO_NAME}`;
 @Component({
-  selector: 'TwicWrapper',
-  templateUrl: './twic-wrapper.component.html',
-  styleUrls: ['./twic-wrapper.component.scss']
+    selector: 'TwicWrapper',
+    templateUrl: './twic-wrapper.component.html',
+    styleUrls: ['./twic-wrapper.component.scss'],
+    standalone: true
 })
 
 
