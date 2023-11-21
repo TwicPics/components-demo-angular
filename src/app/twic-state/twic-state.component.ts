@@ -1,5 +1,5 @@
 import { ChangeDetectorRef, Component } from '@angular/core';
-import { StateEvent } from '@twicpics/components/angular16';
+import { StateEvent } from '@twicpics/components/angular17';
 
 @Component({
   selector: 'app-twic-state',

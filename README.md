@@ -1,6 +1,6 @@
 # TwicPics Components + Angular
 
-This project is a demonstration project of [TwicPics Components](https://www.twicpics.com/docs/components/angular?utm_source=github&utm_medium=organic&utm_campaign=components) using [Angular](https://angular.io/).
+This project is a demonstration project of [TwicPics Components](https://www.twicpics.com/docs/components/angular?utm_source=github&utm_medium=organic&utm_campaign=components) using [Angular](https://angular.io/) in a NgModule-based application.
 
 ## How to build
 

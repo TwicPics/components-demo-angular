@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Mode } from '@twicpics/components/angular16';
+import { Mode } from '@twicpics/components/angular17';
 
 const config = [
   {

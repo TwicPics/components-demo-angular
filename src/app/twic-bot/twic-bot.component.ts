@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Anchor } from '@twicpics/components/angular16';
+import { Anchor } from '@twicpics/components/angular17';
 
 type Config = {
   anchor: Anchor,
