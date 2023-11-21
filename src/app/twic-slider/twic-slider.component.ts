@@ -1,9 +1,15 @@
 import { Component } from '@angular/core';
+import { TwicPicsComponentsModule } from '@twicpics/components/angular17';
+import { NgFor } from '@angular/common';
+import { TwicAbstractComponent } from '../components/twic-abstract/twic-abstract.component';
+import { TwicWrapperComponent } from '../components/twic-wrapper/twic-wrapper.component';
 
 @Component({
-  selector: 'app-twic-slider',
-  templateUrl: './twic-slider.component.html',
-  styleUrls: ['./twic-slider.component.scss']
+    selector: 'app-twic-slider',
+    templateUrl: './twic-slider.component.html',
+    styleUrls: ['./twic-slider.component.scss'],
+    standalone: true,
+    imports: [TwicWrapperComponent, TwicAbstractComponent, NgFor, TwicPicsComponentsModule]
 })
 export class TwicSliderComponent {
 

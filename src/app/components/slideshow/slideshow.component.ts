@@ -1,10 +1,13 @@
 import { ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
-import { StateEvent } from '@twicpics/components/angular16';
+import { StateEvent, TwicPicsComponentsModule } from '@twicpics/components/angular17';
+import { NgStyle, NgFor, NgClass } from '@angular/common';
 
 @Component({
-  selector: 'Slideshow',
-  templateUrl: './slideshow.component.html',
-  styleUrls: ['./slideshow.component.scss']
+    selector: 'Slideshow',
+    templateUrl: './slideshow.component.html',
+    styleUrls: ['./slideshow.component.scss'],
+    standalone: true,
+    imports: [NgStyle, NgFor, TwicPicsComponentsModule, NgClass]
 })
 export class SlideshowComponent implements OnInit {
 
