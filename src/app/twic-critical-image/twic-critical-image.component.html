@@ -1,0 +1,35 @@
+<div>
+  <TwicWrapper
+    filename="src/app/twic-critical-image/twic-critical-image.component.html"
+  >
+    <div class="twic-item mb">
+      <TwicPicture
+        src="components/coffee.jpg"
+        eager
+        focus="
+          @md 52px50p
+        "
+        ratio="
+          @md 4/3
+          @lg 3
+        "
+        sizes="
+          (min-width: 1600px) calc(100vw - 4rem),
+          calc(100vw - 80px)
+        "
+      ></TwicPicture>
+    </div>
+    <TwicAbstract title="Critical Image with Art Direction" class="mt">
+      <p>
+        <Code>TwicPicture</Code> streamlines the use of <Code>picture</Code> elements and <Code>srcset</Code> attributes.
+      </p>
+      <p>
+          It enables the optimization of critical image rendering (resolution switching) while incorporating layout adjustments (art direction), all aimed at optimizing the <b>Cumulative Layout Shift</b> (CLS).
+      </p>
+      <p>
+        It operates independently of the <a target="_blank" href="https://www.twicpics.com/docs/essentials/script">TwicPics Script</a> and dynamically generates <Code>source</Code> elements and <Code>srcset</Code> attributes from a <b>single master file</b> using variants transformed through the <a target="_blank" href="https://www.twicpics.com/docs/guides/writing-api-requests">TwicPics API</a>.
+      </p>
+    </TwicAbstract>
+
+  </TwicWrapper>
+</div>

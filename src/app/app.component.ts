@@ -15,5 +15,4 @@ export class AppComponent {
 installTwicPics({
   domain: `https://demo.twic.pics`,
   anticipation: 0.5,
-  step: 100,
 })

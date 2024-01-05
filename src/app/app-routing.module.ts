@@ -13,6 +13,7 @@ import { TwicFocusComponent } from './twic-focus/twic-focus.component';
 import { TwicGridAndZoomComponent } from './twic-grid-and-zoom/twic-grid-and-zoom.component';
 import { TwicHeroComponent } from './twic-hero/twic-hero.component';
 import { TwicIntrinsicComponent } from './twic-intrinsic/twic-intrinsic.component';
+import { TwicCriticalImageComponent } from './twic-critical-image/twic-critical-image.component';
 import { TwicModalComponent } from './twic-modal/twic-modal.component';
 import { TwicModeComponent } from './twic-mode/twic-mode.component';
 import { TwicPageTemplatingComponent } from './twic-page-templating/twic-page-templating.component';
@@ -38,6 +39,7 @@ const routes: Routes = [
   { path: "bot", component: TwicBotComponent },
   { path: "bulk-loading", component: TwicBulkLoadingComponent },
   { path: "color-blindness", component: TwicColorBlindnessComponent },
+  { path: "critical-image", component: TwicCriticalImageComponent },
   { path: "eager", component: TwicEagerComponent },
   { path: "flip-cards", component: TwicFlipCardsComponent },
   { path: "focus", component: TwicFocusComponent },
