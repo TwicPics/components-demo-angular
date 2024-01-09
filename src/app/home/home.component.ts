@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
         },
         {
           route: `/critical-image`,
-          imgSrc: `components/coffee.jpg`,
+          imgSrc: `puppy-dressed-as-a-reindeer.jpeg`,
           title: `Critical Image`,
         },
         {
