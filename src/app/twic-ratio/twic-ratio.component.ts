@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TwicPicsComponentsModule } from '@twicpics/components/angular17';
+import { TwicPicsComponentsModule } from '@twicpics/components/angular19';
 import { NgClass } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { CodeComponent } from '../components/twic-code/twic-code.component';
@@ -7,11 +7,11 @@ import { TwicAbstractComponent } from '../components/twic-abstract/twic-abstract
 import { TwicWrapperComponent } from '../components/twic-wrapper/twic-wrapper.component';
 
 @Component({
-    selector: 'app-twic-ratio',
-    templateUrl: './twic-ratio.component.html',
-    styleUrls: ['./twic-ratio.component.scss'],
-    standalone: true,
-    imports: [TwicWrapperComponent, TwicAbstractComponent, CodeComponent, RouterLink, NgClass, TwicPicsComponentsModule]
+  selector: 'app-twic-ratio',
+  templateUrl: './twic-ratio.component.html',
+  styleUrls: ['./twic-ratio.component.scss'],
+  standalone: true,
+  imports: [TwicWrapperComponent, TwicAbstractComponent, CodeComponent, RouterLink, NgClass, TwicPicsComponentsModule]
 })
 export class TwicRatioComponent {
 

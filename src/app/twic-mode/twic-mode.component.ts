@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Mode, TwicPicsComponentsModule } from '@twicpics/components/angular17';
+import { Mode, TwicPicsComponentsModule } from '@twicpics/components/angular19';
 import { CodeComponent } from '../components/twic-code/twic-code.component';
 import { TwicAbstractComponent } from '../components/twic-abstract/twic-abstract.component';
 import { TwicWrapperComponent } from '../components/twic-wrapper/twic-wrapper.component';
@@ -7,11 +7,11 @@ import { TwicWrapperComponent } from '../components/twic-wrapper/twic-wrapper.co
 const IMG_URL = `components/fox.jpg`;
 
 @Component({
-    selector: 'app-twic-mode',
-    templateUrl: './twic-mode.component.html',
-    styleUrls: ['./twic-mode.component.scss'],
-    standalone: true,
-    imports: [TwicWrapperComponent, TwicAbstractComponent, CodeComponent, TwicPicsComponentsModule]
+  selector: 'app-twic-mode',
+  templateUrl: './twic-mode.component.html',
+  styleUrls: ['./twic-mode.component.scss'],
+  standalone: true,
+  imports: [TwicWrapperComponent, TwicAbstractComponent, CodeComponent, TwicPicsComponentsModule]
 })
 export class TwicModeComponent {
 

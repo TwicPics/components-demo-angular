@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
 import { NgIf } from '@angular/common';
-import { TwicPicsComponentsModule } from '@twicpics/components/angular17';
+import { TwicPicsComponentsModule } from '@twicpics/components/angular19';
 import { RouterLink } from '@angular/router';
 import { CodeComponent } from '../components/twic-code/twic-code.component';
 import { TwicAbstractComponent } from '../components/twic-abstract/twic-abstract.component';
 import { TwicWrapperComponent } from '../components/twic-wrapper/twic-wrapper.component';
 
 @Component({
-    selector: 'app-twic-focus',
-    templateUrl: './twic-focus.component.html',
-    styleUrls: ['./twic-focus.component.scss'],
-    standalone: true,
-    imports: [TwicWrapperComponent, TwicAbstractComponent, CodeComponent, RouterLink, TwicPicsComponentsModule, NgIf]
+  selector: 'app-twic-focus',
+  templateUrl: './twic-focus.component.html',
+  styleUrls: ['./twic-focus.component.scss'],
+  standalone: true,
+  imports: [TwicWrapperComponent, TwicAbstractComponent, CodeComponent, RouterLink, TwicPicsComponentsModule, NgIf]
 })
 export class TwicFocusComponent {
 

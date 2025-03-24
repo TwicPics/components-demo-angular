@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { TwicPicsComponentsModule } from '@twicpics/components/angular17';
+import { TwicPicsComponentsModule } from '@twicpics/components/angular19';
 import { RouterLink } from '@angular/router';
 import { NgFor, NgIf } from '@angular/common';
 import { TwicWrapperComponent } from '../components/twic-wrapper/twic-wrapper.component';
 
 @Component({
-    selector: 'app-home',
-    templateUrl: './home.component.html',
-    styleUrls: ['./home.component.scss'],
-    standalone: true,
-    imports: [TwicWrapperComponent, NgFor, RouterLink, NgIf, TwicPicsComponentsModule]
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss'],
+  standalone: true,
+  imports: [TwicWrapperComponent, NgFor, RouterLink, NgIf, TwicPicsComponentsModule]
 })
 export class HomeComponent implements OnInit {
 

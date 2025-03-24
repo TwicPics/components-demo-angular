@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { TwicPicsComponentsModule } from '@twicpics/components/angular17';
+import { TwicPicsComponentsModule } from '@twicpics/components/angular19';
 import { NgFor, NgIf } from '@angular/common';
 import { CodeComponent } from '../components/twic-code/twic-code.component';
 import { TwicAbstractComponent } from '../components/twic-abstract/twic-abstract.component';
 import { TwicWrapperComponent } from '../components/twic-wrapper/twic-wrapper.component';
 
 @Component({
-    selector: 'app-twic-page-templating',
-    templateUrl: './twic-page-templating.component.html',
-    styleUrls: ['./twic-page-templating.component.scss'],
-    standalone: true,
-    imports: [TwicWrapperComponent, TwicAbstractComponent, CodeComponent, NgFor, NgIf, TwicPicsComponentsModule]
+  selector: 'app-twic-page-templating',
+  templateUrl: './twic-page-templating.component.html',
+  styleUrls: ['./twic-page-templating.component.scss'],
+  standalone: true,
+  imports: [TwicWrapperComponent, TwicAbstractComponent, CodeComponent, NgFor, NgIf, TwicPicsComponentsModule]
 })
 export class TwicPageTemplatingComponent implements OnInit {
 

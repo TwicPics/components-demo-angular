@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Mode, TwicPicsComponentsModule } from '@twicpics/components/angular17';
+import { Mode, TwicPicsComponentsModule } from '@twicpics/components/angular19';
 import { NgIf } from '@angular/common';
 import { CodeComponent } from '../components/twic-code/twic-code.component';
 import { TwicAbstractComponent } from '../components/twic-abstract/twic-abstract.component';
@@ -26,11 +26,11 @@ const config = [
 
 
 @Component({
-    selector: 'app-twic-refit',
-    templateUrl: './twic-refit.component.html',
-    styleUrls: ['./twic-refit.component.scss'],
-    standalone: true,
-    imports: [TwicWrapperComponent, TwicAbstractComponent, CodeComponent, TwicPicsComponentsModule, NgIf]
+  selector: 'app-twic-refit',
+  templateUrl: './twic-refit.component.html',
+  styleUrls: ['./twic-refit.component.scss'],
+  standalone: true,
+  imports: [TwicWrapperComponent, TwicAbstractComponent, CodeComponent, TwicPicsComponentsModule, NgIf]
 })
 export class TwicRefitComponent {
 

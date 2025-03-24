@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { TwicPicsComponentsModule } from '@twicpics/components/angular17';
+import { TwicPicsComponentsModule } from '@twicpics/components/angular19';
 import { NgIf, NgStyle, NgFor } from '@angular/common';
 import { TwicAbstractComponent } from '../components/twic-abstract/twic-abstract.component';
 import { TwicWrapperComponent } from '../components/twic-wrapper/twic-wrapper.component';
@@ -11,11 +11,11 @@ type Image = {
 }
 
 @Component({
-    selector: 'app-twic-eager',
-    templateUrl: './twic-eager.component.html',
-    styleUrls: ['./twic-eager.component.scss'],
-    standalone: true,
-    imports: [TwicWrapperComponent, TwicAbstractComponent, NgIf, NgStyle, NgFor, TwicPicsComponentsModule]
+  selector: 'app-twic-eager',
+  templateUrl: './twic-eager.component.html',
+  styleUrls: ['./twic-eager.component.scss'],
+  standalone: true,
+  imports: [TwicWrapperComponent, TwicAbstractComponent, NgIf, NgStyle, NgFor, TwicPicsComponentsModule]
 })
 export class TwicEagerComponent implements OnInit, OnDestroy {
 

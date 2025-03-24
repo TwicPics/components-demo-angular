@@ -1,15 +1,15 @@
 import { ChangeDetectorRef, Component } from '@angular/core';
-import { StateEvent, TwicPicsComponentsModule } from '@twicpics/components/angular17';
+import { StateEvent, TwicPicsComponentsModule } from '@twicpics/components/angular19';
 import { CodeComponent } from '../components/twic-code/twic-code.component';
 import { TwicAbstractComponent } from '../components/twic-abstract/twic-abstract.component';
 import { TwicWrapperComponent } from '../components/twic-wrapper/twic-wrapper.component';
 
 @Component({
-    selector: 'app-twic-state',
-    templateUrl: './twic-state.component.html',
-    styleUrls: ['./twic-state.component.scss'],
-    standalone: true,
-    imports: [TwicWrapperComponent, TwicAbstractComponent, CodeComponent, TwicPicsComponentsModule]
+  selector: 'app-twic-state',
+  templateUrl: './twic-state.component.html',
+  styleUrls: ['./twic-state.component.scss'],
+  standalone: true,
+  imports: [TwicWrapperComponent, TwicAbstractComponent, CodeComponent, TwicPicsComponentsModule]
 })
 export class TwicStateComponent {
 
